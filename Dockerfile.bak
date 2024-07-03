@@ -9,8 +9,6 @@ WORKDIR /code
 ADD pom.xml /code/pom.xml
 ADD server.xml /code/server.xml
 
-ADD /libs/xstream-1.4.20.jar /code/xstream-1.4.20.jar
-
 # Adding source, compile and package into a fat jar
 ADD src /code/src
 RUN ["mvn", "package"]
